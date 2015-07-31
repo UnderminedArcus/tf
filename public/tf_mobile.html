@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TF Imager</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+  </head>
+  <body>
+    <!--    <header>
+      <h1> Datensicherung EDV - Imager</h1>
+      <img src="logo.jpg" alt="Kantonspolizei Zürich">
+      <br>
+      Technische Ermittlungsunterstützung
+      <br>
+      Informations-/Kommunikationstechnologie
+      </header> -->
+
+      <h1>Datensicherung Mobiltelefon</h1>
+
+      <form>
+        <fieldset>
+          Datenträger <input type="text" name="device"> Asservaten-Nr <input type="text" name="exhibit_no">
+        </fieldset>
+        <fieldset>
+          <legend>Gerät</legend>
+          Mobiltelefon <input type="text" name="device"> 
+          </fieldset>
+            <fieldset>
+              <legend>Zustand</legend>
+              In Betrieb<br>
+              <input type="radio" name="fats_import" value="false">Ja
+              <input type="radio" name="fats_import" value="false">Nein<br>
+              SIM Karte entfernt <input type="checkbox" name="sim_card_removed"><br>
+              Akku<br>
+              <input type="radio" name="fats_import" value="false">geladen
+              <input type="radio" name="fats_import" value="false">leer<br>
+              Schäden<br>
+              <input type="radio" name="fats_import" value="false">Ja
+              <input type="radio" name="fats_import" value="false">Nein<br>
+              Zubehör<br>
+              <input type="radio" name="fats_import" value="false">Ja
+              <input type="radio" name="fats_import" value="false">Nein<br>
+
+              Flugmodus EIN <input type="checkbox" name="sim_card_removed"><br>
+              Wlan AUS <input type="checkbox" name="sim_card_removed"><br>
+            </fieldset>
+            <fieldset>
+              <legend>Bemerkungen</legend>
+              <textarea name="remarks" rows=10 cols=50></textarea> 
+            </fieldset>
+            <fieldset>
+              <legend>Datum / Zeit</legend>
+              Gerät <input type="datetime" name="system_time"><br>
+              automatisch <input type="radio" name="sim_card_removed">
+              manuell <input type="radio" name="sim_card_removed">
+              unbekannt <input type="radio" name="sim_card_removed"><br>
+              Zeitzone <input type="text" name="system_time_zone"><br>
+              PC (Untersuchung)<input type="datetime" name="system_time"><br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Ausleseart</legend>
+              <textarea name="remarks" rows=10 cols=50></textarea> 
+            </fieldset>
+
+            <fieldset>
+              <legend>Bemerkungen</legend>
+              <textarea name="remarks" rows=10 cols=50></textarea> 
+            </fieldset>
+            <fieldset>
+              <legend>Bemerkungen</legend>
+              <textarea name="remarks" rows=10 cols=50></textarea> 
+            </fieldset>
+            <fieldset>
+              <legend>System</legend>
+              Systemtest<br>
+              <input type="radio" name="system_test" value="true">Ja<input type="radio" name="system_test" value="false">Nein<br>
+              <br>
+              Systemzeit<br>
+              IST<input type="datetime" name="system_time">SOLL<input type="datetime" name="system_time">
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>FATS Import</legend>
+              <input type="radio" name="fats_import" value="false">Ja
+              <input type="radio" name="fats_import" value="false">Nein 
+            </fieldset>
+
+
+      </form>
+  </body>
+</html>

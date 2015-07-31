@@ -1,0 +1,11 @@
+{
+  "name": "tf",
+  "version": "0.0.0",
+  "description": "SPA providing tech forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "surs",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+body {
+  background-color: lightblue;
+  font: 1.00em Helvetica,sans-serif;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+legend {
+  color: navy;
+  font-weight: bold;
+}
+

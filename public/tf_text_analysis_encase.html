@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TF Imager</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+  </head>
+  <body>
+    <!--    <header>
+      <h1> Datensicherung EDV - Imager</h1>
+      <img src="logo.jpg" alt="Kantonspolizei Zürich">
+      <br>
+      Technische Ermittlungsunterstützung
+      <br>
+      Informations-/Kommunikationstechnologie
+      </header> -->
+
+      <h1>Datensicherung Imager</h1>
+
+      <form>
+        <fieldset>
+          Datenträger <input type="text" name="device"> Asservaten-Nr <input type="text" name="exhibit_no">
+        </fieldset>
+        <fieldset>
+          <legend>Datensicherung Imager</legend>
+          Datensicherung mit Imager<br>
+          <input type="radio" name="data_aquisition_with_imager" value="true">Ja
+          <input type="radio" name="data_aquisition_with_imager" value="false">Nein<br>
+          Art: <input type="text" name="aq_type"><br>
+          <br>
+          Datenträger ausgebaut<br>
+          <input type="radio" name="disk_removed" value="true">Ja
+          <input type="radio" name="disk_removed" value="false">Nein<br>
+          <br>
+          Sicherung vollständig<br>
+          <input type="radio" name="aquisition_complete" value="true">Ja
+          <input type="radio" name="aquisition_complete" value="false">Nein - Siehe Bemerkungen<br>
+        </fieldset>
+        <fieldset>
+          <legend>Datensicherung überprüft</legend>
+          <input type="radio" name="aquisition_verified" value="true">Ja
+          <input type="radio" name="aquisition_verified" value="false">Nein<br>
+          Art: <input type="text" name="veri_type">
+        </fieldset>
+        <fieldset>
+          <legend>Vorschau</legend>
+          <input type="radio" name="preview" value="true">Ja
+          <input type="radio" name="preview" value="false">Nein - Siehe Hinweis/Grund
+          <input type="checkbox" name="partition_prev" value="false">Partitionen
+          <input type="checkbox" name="directory_prev" value="false">Verzeichnisse
+          <input type="checkbox" name="file_prev" value="false">Dateien (Inhalt)
+        </fieldset>
+
+        <fieldset>
+          <legend>Hinweis / Grund</legend>
+          <input type="checkbox" name="encryption" value="false">Verschlüsselung
+          <input type="checkbox" name="partition_prev" value="false">RAID
+          <input type="checkbox" name="directory_prev" value="false">Andere - Siehe Bemerkungen
+        </fieldset>
+        <fieldset>
+          <legend>Verifizierung</legend>
+          Lesefehler<br>
+          <input type="radio" name="read_err" value="true">Ja
+          <input type="radio" name="read_err" value="false">Nein<br>
+
+          <br>
+          MD5/SHA1 identisch<br>
+          <input type="radio" name="checksum_ok" value="true">Ja
+          <input type="radio" name="checksum_ok" value="false">Nein<br>
+          <br>
+          Sektoren verifiziert<br>
+          <input type="radio" name="sectors_verfied" value="true">Ja
+          <input type="radio" name="sectors_verfied" value="false">Nein 
+        </fieldset>
+        <fieldset>
+          <legend>System</legend>
+          Systemtest<br>
+          <input type="radio" name="system_test" value="true">Ja<input type="radio" name="system_test" value="false">Nein<br>
+          <br>
+          Systemzeit<br>
+          IST<input type="datetime" name="system_time">SOLL<input type="datetime" name="system_time">
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>FATS Import</legend>
+          <input type="radio" name="fats_import" value="false">Ja
+          <input type="radio" name="fats_import" value="false">Nein 
+        </fieldset>
+        <fieldset>
+          <legend>Bemerkungen</legend>
+          <textarea name="remarks" rows=10 cols=50></textarea> 
+          <fieldset>
+
+
+
+      </form>
+  </body>
+</html>
